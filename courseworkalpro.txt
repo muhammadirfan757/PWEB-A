@@ -1,0 +1,32 @@
+/**
+ * IS184203-Genap-2020/21 - Code in Class Exercise Week 05
+ * Name of Project  : Decision
+ * Student ID       : 5026201113
+ * Student Name     : Muhammad Irfan
+ * Class            : A
+ * Submission Date  : Date
+ */
+ 
+ 
+import java.util.Scanner;
+public class StopLightA {
+    
+    public static void lightA() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a color code");
+        double currentColor = sc.nextInt();
+        
+        if ( currentColor == 1){
+            System.out.println("Next Traffic Light is green");
+        }
+        else if ( currentColor == 2){
+            System.out.println("Next Traffic Light is yellow");
+        }
+        else if ( currentColor == 3){
+            System.out.println("Next Traffic Light is red");
+        }
+        else if ( currentColor < 1 || currentColor > 3){
+            System.out.println("Invalid color");
+        }
+    }
+}
